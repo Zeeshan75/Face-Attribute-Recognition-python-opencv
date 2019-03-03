@@ -1,0 +1,44 @@
+========== Face Attribute Recognition ===========
+
+Objective :
+***********
+	 The main objective of this system is to predict the different types of facial attributes 
+	 such as(eyes: open/closed, Smiling: yes/No, Glasses: Wearing/Not Weaaring, Gender and Age)
+	 from the given input image.
+
+Process :
+**********
+	 Here we used many trained models on the face images and the Models we used are as follows.
+	 	Models :
+	 	-------------
+	 	1. get_frontal_face_detector() and shape_predictor_68_face_landmarks.dat are the two 
+	 	   pre_trained models used in detecting the faces and 68 landmarks on face using those
+	 	   two models.
+
+	 	   		The above two models are used in predicting wether the wye is closed or opened by 
+	 	   	calculating the eucledian distances between the 6 landmark points on each eye. From 
+	 	   	this we can calculate the 'eye_aspect_ratio' and by using the threshold value of 0.2
+	 	   	we can predict wether the eye is opened or closed.
+
+	 	2. We trained the model on the faces with happiness and neutral images from the fer13
+	 	   dataset which predicts wether the person is smiling or not.
+
+	 	3. We trained the model on the faces with glasses and without glasses dataset and we 
+	 	   are using the model in predicting the person is wearing glasses or not.
+
+	 	4. Here we are using a model which is trained on predicting the gender and age of the 
+	 	   person.
+
+	 The above models are used in predicting the face atributes.
+	 	   We have used the gray scale images with predicted faces from the get_frontal_face-detector
+	 	   and we cropped those images and used them in predicting the eyes, smile and glasses.
+	 	   Then we used the cropped image and increased borders by 20% and here we used colored 
+	 	   new_cropped images in predicting the age and gender.
+
+Applications:
+*************
+	 1. It can be further be used in generating the captions/sentences based on given image.
+	 2. Further it can be used in the Facial Expression/Emotion detection (wether he is angry, 
+	 	happy, fear, etc.)
+	 3. Can be used in detecting wether the person is sleeping or awake while driving cars to
+	 	avoid car accidents.
