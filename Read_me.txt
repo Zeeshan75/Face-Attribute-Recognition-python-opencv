@@ -20,14 +20,14 @@ Process :
 	 	   	this we can calculate the 'eye_aspect_ratio' and by using the threshold value of 0.2
 	 	   	we can predict wether the eye is opened or closed.
 
-	 	2. We trained the model on the faces with happiness and neutral images from the fer13
-	 	   dataset which predicts wether the person is smiling or not.
+	 	2. We trained the model on the faces with "happiness" and "neutral" images from the "fer13
+	 	   dataset" which predicts wether the person is smiling or not.
 
-	 	3. We trained the model on the faces with glasses and without glasses dataset and we 
+	 	3. We trained the model on the faces with "glasses" and "without glasses" dataset and we 
 	 	   are using the model in predicting the person is wearing glasses or not.
 
 	 	4. Here we are using a model which is trained on predicting the gender and age of the 
-	 	   person.
+	 	   person from others resource .
 
 	 The above models are used in predicting the face atributes.
 	 	   We have used the gray scale images with predicted faces from the get_frontal_face-detector
