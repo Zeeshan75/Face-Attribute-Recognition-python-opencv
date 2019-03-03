@@ -15,7 +15,7 @@ Process :
 	 	   pre_trained models used in detecting the faces and 68 landmarks on face using those
 	 	   two models.
 
-	 	   		The above two models are used in predicting wether the wye is closed or opened by 
+	 	   		The above two models are used in predicting wether the eye is closed or opened by 
 	 	   	calculating the eucledian distances between the 6 landmark points on each eye. From 
 	 	   	this we can calculate the 'eye_aspect_ratio' and by using the threshold value of 0.2
 	 	   	we can predict wether the eye is opened or closed.
